@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////
 //
-//  File name :     program1.c
-//  Description :   Used to Display number of $ and * on screen
+//  File name :     program2.c
+//  Description :   Used to Display numbers
 //  Author :        Neha Desai
 //  Date :          14-05-2025
 //
@@ -9,17 +9,16 @@
 
 #include<stdio.h>
 
-void Pattern(int iNo)
+
+void Display(int iNo)
 {
     int iCnt = 0;
-    
+
     for(iCnt = 1; iCnt <= iNo; iCnt++)
     {
-        printf(" $ * \n");
-
+        printf("%d\n", iCnt);
     }
 }
-
 int main()
 {
     int iValue = 0;
@@ -27,6 +26,7 @@ int main()
     printf("Enter the number : ");
     scanf("%d", &iValue);
 
-    Pattern(iValue);
+    Display(iValue);
     return 0;
+
 }
