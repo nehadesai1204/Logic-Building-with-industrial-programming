@@ -1,16 +1,16 @@
-////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
 //
-//  File name :     program1.c
-//  Description :   program which accepts number and return count of even Digits
-//  Author :        Neha
+//  File name :     program2.c
+//  Description :   program which accepts number and return count of odd Digits
+//  Author :        neha
 //  Date :          16-05-2025
 //
-////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
 
 
 #include<stdio.h>
 
-int CountEven(int iNo)
+int CountOdd(int iNo)
 {
     if (iNo < 0)
     {
@@ -26,7 +26,7 @@ int CountEven(int iNo)
         iDigit = iNo % 10;
         iNo = iNo / 10;
 
-        if ((iDigit % 2) == 0)
+        if ((iDigit % 2) != 0)
         {
             iCnt = iCnt + 1;
         }
@@ -43,8 +43,8 @@ int main()
 
     scanf("%d", &iValue);
 
-    iRet = CountEven(iValue);
-    printf("The number even Digits are : %d", iRet);
+    iRet = CountOdd(iValue);
+    printf("The number Odd Digits are : %d", iRet);
 
     return 0;
 
